@@ -1,5 +1,5 @@
 ## Getting Started
-First, install dependencies.
+First, install the package dependencies.
 
 Then, add your Bitmovin player key to the **line 28** on *./components/BitmovinPlayer.tsx*.
 
