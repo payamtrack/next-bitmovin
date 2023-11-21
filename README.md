@@ -2,7 +2,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, add your Bitmovin player key to the **line 28** on *./components/BitmovinPlayer.tsx*
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -14,11 +16,20 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. The player should work with no issue.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Steps to Produce Errors
+1. Open *./components/VideoPlayer.tsx* file
+2. Enable SSR by either:
+ * Uncomment **line 6** and comment out **lines 9-11**
+ * or, set ssr to true on **line 10**
+3. Go to your browser and load the page
+4. Play the video player
+
+Now, soon after you should get a server error message
+
 
 ## Learn More
 
