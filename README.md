@@ -1,8 +1,7 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
+First, install dependencies.
 
-First, add your Bitmovin player key to the **line 28** on *./components/BitmovinPlayer.tsx*
+Then, add your Bitmovin player key to the **line 28** on *./components/BitmovinPlayer.tsx*.
 
 Then, run the development server:
 
